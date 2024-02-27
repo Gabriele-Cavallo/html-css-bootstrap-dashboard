@@ -126,3 +126,13 @@ main{
 }
 /* #endregion Info */
 
+/* #region MS Media Query */
+@media screen and (max-width: 576px){
+    .ms-d-sm{
+        display: none;
+    }
+    
+}
+
+/* #endregion MS Media Query */
+
