@@ -7,6 +7,12 @@
 }
 /* #endregion Reset */
 
+/* #region Typography */
+h2{
+    display: inline-block;
+}
+/* #endregion Typography */
+
 /* #region MS Utilities */
 .ms-container{
     padding: 0;
@@ -25,6 +31,7 @@ aside nav{
 main{
     height: calc(100vh - 65px);
     overflow-y: scroll;
+    width: 100%;
 }
 .ms-search-bar{
     background-color: #e5e5e5;
@@ -40,6 +47,9 @@ main{
 }
 .ms-item-aside{
     color: white;
+}
+.students .text-bg-primary{
+    background-color: #165bba !important;
 }
 /* #endregion MS Utilities */
 
@@ -61,3 +71,22 @@ aside{
     color: #ff8f00;
 }
 /* #endregion Header */
+
+/* #region Students */
+.students{
+    background-color: #1b72e8;
+}
+.square-border{
+    height: 35px;
+    width: 35px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.students-nmbr{
+    font-size: 26px;
+}
+/* #endregion Students */
+
