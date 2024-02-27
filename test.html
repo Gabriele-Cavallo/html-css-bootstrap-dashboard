@@ -13,112 +13,294 @@
     <title>Bootstrap Dashboard</title>
 </head>
 <body>
-    <header>
-        <div class="container-fluid py-3">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <img class="d-none d-lg-block" src="./img/logo.svg" alt="Logo">
-                    <img class="ms-mobile-logo d-lg-none" src="./img/mobile-logo.png" alt="Logo">
+  <header>
+    <div class="container-fluid py-3">
+      <div class="row align-items-center">
+        <div class="col-auto">
+          <img class="d-none d-lg-block" src="./img/logo.svg" alt="Logo">
+          <img class="ms-mobile-logo d-lg-none" src="./img/mobile-logo.png" alt="Logo">
+        </div>
+        <div class="col d-flex align-items-center ms-search-bar">
+          <i class="fa-solid fa-magnifying-glass pe-2"></i>
+          <input class="flex-grow-1 ms-search-bar-input" type="search" name="" id="" placeholder="Prova a cercare: Lezioni di Laravel">
+        </div>
+        <div class="col-auto ps-3 d-flex">
+          <i class="fa-solid fa-list-ul d-none d-lg-block px-2 ms-item-header"></i>
+          <i class="fa-solid fa-circle-question d-none d-lg-block px-2 ms-item-header"></i>
+          <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block px-2 ms-item-header"></i>
+          <i class="fa-solid fa-bell ps-2"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="ms-container container-fluid d-flex">
+    <aside>
+      <nav class="d-flex flex-column px-4 py-3">
+        <div class="pb-1 pe-4 d-flex align-items-center">
+          <i class="col-lg-6 fa-solid fa-house ms-item-aside"></i>
+          <span class="col-lg-6 fw-semibold d-none d-lg-block text-white">Home</span>
+        </div>
+        <div class="pb-1 pe-4 d-flex align-items-center">
+          <i class="col-lg-6 fa-solid fa-chart-simple ms-item-aside"></i>
+          <span class="col-lg-6 fw-semibold d-none d-lg-block text-white">Stats</span>
+        </div>
+        <div class="pb-1 pe-4 d-flex align-items-center">
+          <i class="col-lg-6 fa-solid fa-signal ms-item-aside"></i>
+          <span class="col-lg-6 fw-semibold d-none d-lg-block text-white">Signal</span>                
+        </div>
+        <div class="mt-auto pb-1 pe-4 d-flex align-items-center">
+          <i class="col-lg-6 fa-solid fa-gear ms-item-aside"></i>
+          <span class="col-lg-6 fw-semibold d-none d-lg-block text-white">Admin</span>
+        </div>
+      </nav>
+    </aside>
+    <main>
+      <!-- Students Section -->
+      <section class="students">
+        <div class="container-fluid">
+          <div class="row text-white px-3 py-3">
+            <div class="pb-4 col-sm-12 col-md-4 col-lg-2 order-md-3">
+              <div class="d-flex align-items-center">
+                <span class="pe-3 fw-semibold">Nuovo Studente</span>
+                <div class="square-border">
+                    <i class="fa-solid fa-plus"></i> 
                 </div>
-                <div class="col d-flex align-items-center ms-search-bar">
-                    <i class="fa-solid fa-magnifying-glass pe-2"></i>
-                    <input class="flex-grow-1 ms-search-bar-input" type="search" name="" id="" placeholder="Prova a cercare: Lezioni di Laravel">
-                </div>
-                <div class="col-auto ps-3 d-flex">
-                    <i class="fa-solid fa-list-ul d-none d-lg-block px-2 ms-item-header"></i>
-                    <i class="fa-solid fa-circle-question d-none d-lg-block px-2 ms-item-header"></i>
-                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block px-2 ms-item-header"></i>
-                    <i class="fa-solid fa-bell ps-2"></i>
+              </div>
+            </div>
+            <div class="pb-4 col-12 col-md-4 col-lg-6 order-md-1">
+              <div>
+                <h2>Boolean</h2>
+                <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+              </div>
+              <div class="fw-semibold d-flex align-items-center">
+                <span class="d-flex align-items-center badge rounded-pill text-bg-primary">3 app</span>
+                <span><i class="d-flex align-items-center fa-solid fa-angles-right px-1"></i></span>
+                <span class="d-lg-none d-flex align-items-center justify-content-center ms-badge badge rounded-pill text-bg-primary"><i class="ms-plus fa-solid fa-plus"></i></span>
+                <span class="me-1 d-none d-lg-block d-flex align-items-center badge rounded-pill text-bg-primary">Boolean mobile app</span>
+                <span class="me-1 d-none d-lg-block d-flex align-items-center badge rounded-pill text-bg-primary">Boolean web app</span>
+                <span class="me-1 d-none d-lg-block d-flex align-items-center badge rounded-pill text-bg-primary">Boolean blog app</span>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 order-md-2">
+                <h6 class="fw-semibold">Studenti online negli ultimi 30 minuti</h6>
+                <span class="students-nmbr fw-semibold">125</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Students Section -->
+
+        <!-- Info Section -->
+        <section class="info">
+            <div class="container-fluid">
+                <div class="row py-3">
+                    <!-- Prossime classi -->
+                    <div class="col-12 col-lg-8 mb-3 order-lg-1">
+                    <div class="card px-3 pb-3">
+                        <h5 class="fw-semibold card-title">Prossime classi</h5>
+                        <table class="table">
+                        <thead>
+                            <tr>
+                            <th class="col" scope="col">Nome</th>
+                            <th class="ms-d-sm col-2 text-center" scope="col">Data Inizio</th>
+                            <th class="ms-d-sm col-1 text-center" scope="col">ROI</th>
+                            <th class="col-1 text-center" scope="col">Stato</th>
+                            <th class="col-1 text-center" scope="col">Azioni</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td class="col">
+                                <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                <span>Classe 75</span>
+                            </td>
+                            <td class="ms-d-sm col-2 text-center">15 Feb 2021</td>
+                            <td class="ms-d-sm col-1 text-center">20%</td>
+                            <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
+                            <td class="col d-flex justify-content-between">
+                                <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="col">
+                                <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                <span>Classe 76</span>
+                            </td>
+                            <td class="ms-d-sm col-2 text-center">16 Feb 2021</td>
+                            <td class="ms-d-sm col-1 text-center">20%</td>
+                            <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
+                            <td class="col d-flex justify-content-between">
+                                <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="col">
+                                <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                <span>Classe 77</span>
+                            </td>
+                            <td class="ms-d-sm col-2 text-center">17 Feb 2021</td>
+                            <td class="ms-d-sm col-1 text-center">20%</td>
+                            <td class="col-1 text-center"><span class="badge text-bg-warning text-white">process</span></td>
+                            <td class="col d-flex justify-content-between">
+                                <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="col">
+                                <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                <span>Classe 78</span>
+                            </td>
+                            <td class="ms-d-sm col-2 text-center">18 Feb 2021</td>
+                            <td class="ms-d-sm col-1 text-center">20%</td>
+                            <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
+                            <td class="col d-flex justify-content-between">
+                                <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="col">
+                                <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                <span>Classe 79</span>
+                            </td>
+                            <td class="ms-d-sm col-2 text-center">19 Feb 2021</td>
+                            <td class="ms-d-sm col-1 text-center">20%</td>
+                            <td class="col-1 text-center"><span class="badge text-bg-danger">failed</span></td>
+                            <td class="col d-flex justify-content-between">
+                                <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="col">
+                                <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                <span>Classe 80</span>
+                            </td>
+                            <td class="ms-d-sm col-2 text-center">20 Feb 2021</td>
+                            <td class="ms-d-sm col-1 text-center">20%</td>
+                            <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
+                            <td class="col d-flex justify-content-between">
+                                <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="col">
+                                <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                <span>Classe 81</span>
+                            </td>
+                            <td class="ms-d-sm col-2 text-center">21 Feb 2021</td>
+                            <td class="ms-d-sm col-1 text-center">20%</td>
+                            <td class="col-1 text-center"><span class="badge text-bg-danger">failed</span></td>
+                            <td class="col d-flex justify-content-between">
+                                <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td class="col">
+                                <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                <span>Classe 82</span>
+                            </td>
+                            <td class="ms-d-sm col-2 text-center">22 Feb 2021</td>
+                            <td class="ms-d-sm col-1 text-center">20%</td>
+                            <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
+                            <td class="col d-flex justify-content-between">
+                                <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                            </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    </div>
+                    </div>
+                    <!-- /Prossime classi -->
+
+                    <!-- F.A.Q. -->
+                    <div class="col-12 col-lg-8 order-lg-3">
+                    <div class="card px-3 pb-3">
+                        <h5 class="fw-semibold card-title">F.A.Q.</h5>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header d-flex">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Come aggiungere un nuovo studente?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header d-flex">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Come posso accedere alle informazioni del mio account?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header d-flex">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Posso usare questa dashboard da mobile?
+                            </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- F.A.Q. -->
+
+                    <!-- Todo -->
+                    <div class="col-12 col-lg-4 order-lg-2">
+                        <div class="card px-3 pb-3 mb-4">
+                            <h5 class="fw-semibold card-title">Todo</h5>
+                            <ul class="list-group ms-list-group pt-3">
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap in classe #75</label>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="card px-3 py-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <img src="./img/stats.jpeg" alt="Stats">
+                                    <h3>Utenti Attivi</h3>
+                                    <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                                </li>
+                                <li class="list-group-item">Gennaio: 1200</li>
+                                <li class="list-group-item">Febbraio: 800</li>
+                                <li class="list-group-item">Marzo: 1500</li>
+                                <li class="list-group-item"><a href="#">Visualizza report approfondito</a></li>
+                              </ul>
+                        </div>
+                    </div>
+                    <!-- /Todo -->
                 </div>
             </div>
-        </div>
-    </header>
-    <div class="ms-container container-fluid d-flex">
-        <aside>
-            <nav class="d-flex flex-column px-4 py-3">
-                <div class="pb-1 d-flex align-items-center">
-                    <i class="fa-solid fa-house ms-item-aside"></i>
-                    <span class="ps-3 ms-1 fw-semibold d-none d-lg-block text-white">Home</span>
-                </div>
-                <div class="pb-1 d-flex align-items-center">
-                    <i class="fa-solid fa-chart-simple ms-item-aside"></i>
-                    <span class="ps-3 ms-2 fw-semibold d-none d-lg-block text-white">Stats</span>
-                </div>
-                <div class="pb-1 d-flex align-items-center">
-                    <i class="fa-solid fa-signal ms-item-aside"></i>
-                    <span class="ps-3 fw-semibold d-none d-lg-block text-white">Signal</span>                
-                </div>
-                <div class="mt-auto pb-1 d-flex align-items-center">
-                    <i class="fa-solid fa-gear ms-item-aside"></i>
-                    <span class="ps-3 ms-1 fw-semibold d-none d-lg-block text-white">Admin</span>
-                </div>
-            </nav>
-        </aside>
-        <main>
-            <!-- Students Section -->
-            <section class="students">
-                <div class="row text-white px-3 py-3">
-                    <div class="pb-4 col-sm-12 col-md-4 col-lg-2 order-md-3">
-                        <div class="d-flex align-items-center">
-                            <span class="pe-3 fw-semibold">Nuovo Studente</span>
-                            <div class="square-border">
-                                <i class="fa-solid fa-plus"></i> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pb-4 col-12 col-md-4 col-lg-6 order-md-1">
-                        <div>
-                            <h2>Boolean</h2>
-                            <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
-                        </div>
-                        <div class="fw-semibold d-flex align-items-center">
-                            <span class="d-flex align-items-center badge rounded-pill text-bg-primary">3 app</span>
-                            <span><i class="d-flex align-items-center fa-solid fa-angles-right px-1"></i></span>
-                            <span class="d-lg-none d-flex align-items-center justify-content-center ms-badge badge rounded-pill text-bg-primary"><i class="ms-plus fa-solid fa-plus"></i></span>
-                            <span class="me-1 d-none d-lg-block d-flex align-items-center badge rounded-pill text-bg-primary">Boolean mobile app</span>
-                            <span class="me-1 d-none d-lg-block d-flex align-items-center badge rounded-pill text-bg-primary">Boolean web app</span>
-                            <span class="me-1 d-none d-lg-block d-flex align-items-center badge rounded-pill text-bg-primary">Boolean blog app</span>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 order-md-2">
-                        <h6 class="fw-semibold">Studenti online negli ultimi 30 minuti</h6>
-                        <span class="students-nmbr fw-semibold">125</span>
-                    </div>
-                </div>
-            </section>
-            <!-- /Students Section -->
-
-            <!-- Info Section -->
-            <section class="info">
-                <div class="container">
-                    <div class="row py-3">
-                        <div class="col-12 col-lg-4">
-                            <div class="card px-3 pb-3">
-                                <h5 class="fw-semibold card-title">Todo</h5>
-                                <ul class="list-group ms-list-group pt-3">
-                                    <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                      <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                      <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap in classe #75</label>
-                                    </li>
-                                    <li class="list-group-item">
-                                      <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                      <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
-                                    </li>
-                                  </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /Info Section -->
-        </main>
-    </div>
-    <!-- JS Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- /JS Bootstrap -->
+        </section>
+        <!-- /Info Section -->
+    </main>
+  </div>
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- /JS Bootstrap -->
 </body>
 </html>
