@@ -51,6 +51,18 @@ main{
 .students .text-bg-primary{
     background-color: #165bba !important;
 }
+.ms-badge{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #165bba
+}
+.ms-plus{
+    font-size: 8px;
+}
+.card >.ms-list-group{
+    border-top: none;
+}
 /* #endregion MS Utilities */
 
 /* #region General */
@@ -88,15 +100,6 @@ aside{
 }
 .students-nmbr{
     font-size: 26px;
-}
-.ms-badge{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: #165bba
-}
-.ms-plus{
-    font-size: 8px;
 }
 /* #endregion Students */
 
