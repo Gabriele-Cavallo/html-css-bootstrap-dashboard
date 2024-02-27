@@ -3,5 +3,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 /* #endregion Reset */
+
+/* #region MS Utilities */
+.ms-container{
+    padding: 0;
+}
+header{
+    position: sticky;
+}
+aside nav{
+    height: 100%;
+}
+main{
+    height: calc(100vh - 60px);
+    overflow-y: scroll;
+}
+/* #endregion MS Utilities */
