@@ -31,6 +31,7 @@ aside nav{
 main{
     height: calc(100vh - 65px);
     overflow-y: scroll;
+    overflow-x: hidden;
     width: 100%;
 }
 .ms-search-bar{
@@ -62,6 +63,12 @@ main{
 }
 .card >.ms-list-group{
     border-top: none;
+}
+.ms-dropdown{
+    z-index: 1; 
+}
+.ms-offcanvas{
+    width: 50vw !important;
 }
 /* #endregion MS Utilities */
 
