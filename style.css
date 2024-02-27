@@ -144,8 +144,14 @@ main{
     .ms-d-sm{
         display: none;
     }
-    
+    .ms-offcanvas{
+        width: 100vw !important;
+    }
 }
-
+@media screen and (max-width: 992px){
+    .ms-offcanvas{
+        width: 100vw !important;
+    }
+}
 /* #endregion MS Media Query */
 

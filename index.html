@@ -79,38 +79,38 @@
                       <div class="offcanvas-body">
                         <form>
                           <div class="row">
-                            <div class="mb-3 col-6">
+                            <div class="mb-3 col-12 col-md-6">
                               <label for="exampleInputName1" class="form-label">Nome</label>
-                              <input type="text" class="form-control" id="exampleInputName1">
+                              <input required type="text" class="form-control" id="exampleInputName1">
                             </div>
-                            <div class="mb-3 col-6">
+                            <div class="mb-3 col-12 col-md-6">
                               <label for="exampleInputSurname1" class="form-label">Cognome</label>
-                              <input type="text" class="form-control" id="exampleInputSurname1">
+                              <input required type="text" class="form-control" id="exampleInputSurname1">
                             </div>
                           </div>
                           <div class="row">
-                            <div class="mb-3 col-6">
+                            <div class="mb-3 col-12 col-md-6">
                               <label for="exampleInputEmail1" class="form-label">Email</label>
                               <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1">@</span>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                <input required type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
                               </div>
                             </div>
-                            <div class="mb-3 col-6">
+                            <div class="mb-3 col-12 col-md-6">
                               <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1">
+                              <input required type="password" class="form-control" id="exampleInputPassword1">
                             </div>
                           </div>
                           <div class="mb-3">
                             <label for="exampleInputAddress1" class="form-label">Indirizzo</label>
-                            <input type="text" class="form-control" id="exampleInputAddress1">
+                            <input required type="text" class="form-control" id="exampleInputAddress1">
                           </div>
                           <div class="row align-items-start">
-                            <div class="mb-3 col-6">
+                            <div class="mb-3 col-12 col-md-6">
                               <label for="exampleInputCity1" class="form-label">Città</label>
-                              <input type="text" class="form-control" id="exampleInputCity1">
+                              <input required type="text" class="form-control" id="exampleInputCity1">
                             </div>
-                            <div class="col-4">
+                            <div class=" col-12 col-md-4 mb-3">
                               <label for="exampleInputState1" class="form-label">Stato</label>
                               <select id="exampleInputState1" class="form-select form-select-md" aria-label="Small select example">
                                 <option selected>Scegli...</option>
@@ -119,17 +119,17 @@
                                 <option value="3">Opzione3</option>
                               </select>
                             </div>
-                            <div class="mb-3 col-2">
+                            <div class="mb-3 col-12 col-md-2">
                               <label for="exampleInputCAP1" class="form-label">CAP</label>
-                              <input type="number" class="form-control" id="exampleInputCAP1">
+                              <input required type="number" class="form-control" id="exampleInputCAP1">
                             </div>
                           </div>
                           <div class="mb-3">
                             <label for="formFile" class="form-label">Foto</label>
-                            <input class="form-control" type="file" id="formFile">
+                            <input required class="form-control" type="file" id="formFile">
                           </div>
                           <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <input required type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
                           </div>
                           <button type="submit" class="btn btn-primary">Salva</button>
