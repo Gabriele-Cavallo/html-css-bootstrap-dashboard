@@ -13,6 +13,213 @@
     <title>Bootstrap Dashboard</title>
 </head>
 <body>
+    <header>
+        <div class="container-fluid py-3">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <img class="d-none d-lg-block" src="./img/logo.svg" alt="Logo">
+                    <img class="ms-mobile-logo d-lg-none" src="./img/mobile-logo.png" alt="Logo">
+                </div>
+                <div class="col d-flex align-items-center ms-search-bar">
+                    <i class="fa-solid fa-magnifying-glass pe-2"></i>
+                    <input class="flex-grow-1 ms-search-bar-input" type="search" name="" id="" placeholder="Prova a cercare: Lezioni di Laravel">
+                </div>
+                <div class="col-auto ps-3 d-flex">
+                    <i class="fa-solid fa-list-ul d-none d-lg-block px-2 ms-item-header"></i>
+                    <i class="fa-solid fa-circle-question d-none d-lg-block px-2 ms-item-header"></i>
+                    <i class="fa-solid fa-ellipsis-vertical d-none d-lg-block px-2 ms-item-header"></i>
+                    <i class="fa-solid fa-bell ps-2"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="ms-container container-fluid d-flex">
+        <aside>
+            <nav class="d-flex flex-column px-4 py-3">
+                <div class="pb-1 d-flex align-items-center">
+                    <i class="fa-solid fa-house ms-item-aside"></i>
+                    <span class="ps-3 ms-1 fw-semibold d-none d-lg-block text-white">Home</span>
+                </div>
+                <div class="pb-1 d-flex align-items-center">
+                    <i class="fa-solid fa-chart-simple ms-item-aside"></i>
+                    <span class="ps-3 ms-2 fw-semibold d-none d-lg-block text-white">Stats</span>
+                </div>
+                <div class="pb-1 d-flex align-items-center">
+                    <i class="fa-solid fa-signal ms-item-aside"></i>
+                    <span class="ps-3 fw-semibold d-none d-lg-block text-white">Signal</span>                
+                </div>
+                <div class="mt-auto pb-1 d-flex align-items-center">
+                    <i class="fa-solid fa-gear ms-item-aside"></i>
+                    <span class="ps-3 ms-1 fw-semibold d-none d-lg-block text-white">Admin</span>
+                </div>
+            </nav>
+        </aside>
+        <main>
+            <!-- Students Section -->
+            <section class="students">
+                <div class="row text-white px-3 py-3">
+                    <div class="pb-4 col-sm-12 col-md-4 col-lg-2 order-md-3">
+                        <div class="d-flex align-items-center">
+                            <span class="pe-3 fw-semibold">Nuovo Studente</span>
+                            <div class="square-border">
+                                <i class="fa-solid fa-plus"></i> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-4 col-12 col-md-4 col-lg-6 order-md-1">
+                        <div>
+                            <h2>Boolean</h2>
+                            <span class="badge rounded-pill text-bg-primary">Piano Blaze</span>
+                        </div>
+                        <div class="fw-semibold d-flex align-items-center">
+                            <span class="d-flex align-items-center badge rounded-pill text-bg-primary">3 app</span>
+                            <span><i class="d-flex align-items-center fa-solid fa-angles-right px-1"></i></span>
+                            <span class="d-lg-none d-flex align-items-center justify-content-center ms-badge badge rounded-pill text-bg-primary"><i class="ms-plus fa-solid fa-plus"></i></span>
+                            <span class="me-1 d-none d-lg-block d-flex align-items-center badge rounded-pill text-bg-primary">Boolean mobile app</span>
+                            <span class="me-1 d-none d-lg-block d-flex align-items-center badge rounded-pill text-bg-primary">Boolean web app</span>
+                            <span class="me-1 d-none d-lg-block d-flex align-items-center badge rounded-pill text-bg-primary">Boolean blog app</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4 order-md-2">
+                        <h6 class="fw-semibold">Studenti online negli ultimi 30 minuti</h6>
+                        <span class="students-nmbr fw-semibold">125</span>
+                    </div>
+                </div>
+            </section>
+            <!-- /Students Section -->
+
+            <!-- Info Section -->
+            <section class="info">
+                <div class="container">
+                    <div class="row py-3">
+                        <div class="col-lg-8">
+                            <div class="card px-3 pb-3">
+                                <h5 class="fw-semibold card-title">Prossime classi</h5>
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th class="col" scope="col">Nome</th>
+                                        <th class="col-2 text-center" scope="col">Data Inizio</th>
+                                        <th class="col-1 text-center" scope="col">ROI</th>
+                                        <th class="col-1 text-center" scope="col">Stato</th>
+                                        <th class="col-1 text-center" scope="col">Azioni</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="col">
+                                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                            <span>Classe 75</span>
+                                        </td>
+                                        <td class="col-2 text-center">15 Feb 2021</td>
+                                        <td class="col-1 text-center">20%</td>
+                                        <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
+                                        <td class="col d-flex justify-content-between">
+                                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="col">
+                                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                            <span>Classe 76</span>
+                                        </td>
+                                        <td class="col-2 text-center">16 Feb 2021</td>
+                                        <td class="col-1 text-center">20%</td>
+                                        <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
+                                        <td class="col d-flex justify-content-between">
+                                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="col">
+                                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                            <span>Classe 77</span>
+                                        </td>
+                                        <td class="col-2 text-center">17 Feb 2021</td>
+                                        <td class="col-1 text-center">20%</td>
+                                        <td class="col-1 text-center"><span class="badge text-bg-warning text-white">process</span></td>
+                                        <td class="col d-flex justify-content-between">
+                                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="col">
+                                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                            <span>Classe 78</span>
+                                        </td>
+                                        <td class="col-2 text-center">18 Feb 2021</td>
+                                        <td class="col-1 text-center">20%</td>
+                                        <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
+                                        <td class="col d-flex justify-content-between">
+                                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="col">
+                                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                            <span>Classe 79</span>
+                                        </td>
+                                        <td class="col-2 text-center">19 Feb 2021</td>
+                                        <td class="col-1 text-center">20%</td>
+                                        <td class="col-1 text-center"><span class="badge text-bg-danger">failed</span></td>
+                                        <td class="col d-flex justify-content-between">
+                                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="col">
+                                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                            <span>Classe 80</span>
+                                        </td>
+                                        <td class="col-2 text-center">20 Feb 2021</td>
+                                        <td class="col-1 text-center">20%</td>
+                                        <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
+                                        <td class="col d-flex justify-content-between">
+                                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="col">
+                                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                            <span>Classe 81</span>
+                                        </td>
+                                        <td class="col-2 text-center">21 Feb 2021</td>
+                                        <td class="col-1 text-center">20%</td>
+                                        <td class="col-1 text-center"><span class="badge text-bg-danger">failed</span></td>
+                                        <td class="col d-flex justify-content-between">
+                                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="col">
+                                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                                            <span>Classe 82</span>
+                                        </td>
+                                        <td class="col-2 text-center">22 Feb 2021</td>
+                                        <td class="col-1 text-center">20%</td>
+                                        <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
+                                        <td class="col d-flex justify-content-between">
+                                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /Info Section -->
+        </main>
+    </div>
     <!-- JS Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- /JS Bootstrap -->

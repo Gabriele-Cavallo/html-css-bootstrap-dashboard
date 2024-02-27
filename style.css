@@ -100,3 +100,29 @@ aside{
 }
 /* #endregion Students */
 
+/* #region Info */
+main{
+    background-color: #f8f9fa;
+}
+.card-title{
+    background-color: #f7f7f7;
+    padding: 5px 10px 12px;
+    border-bottom: 1px solid #cbcbcb;
+    margin: 0 -1rem;
+}
+.avatar-class{
+    height: 30px;
+    background-color: white;
+}
+.ms-item-table{
+    color: #6c757d;
+    height: 29px;
+    width: 29px;
+    border: 1px solid #6c757d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+/* #endregion Info */
+
