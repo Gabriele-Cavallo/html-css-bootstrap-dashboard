@@ -35,14 +35,21 @@ main{
     background-color: #e5e5e5;
     border: none;
 }
-.ms-item{
+.ms-item-header{
     color: #5b5858;
+}
+.ms-item-aside{
+    color: white;
 }
 /* #endregion MS Utilities */
 
 /* #region General */
 img{
     max-width: 100%;
+}
+aside{
+    background-color: #051e34;
+    background-image: url(./img/sidebar-bg.png);
 }
 /* #endregion General */
 
