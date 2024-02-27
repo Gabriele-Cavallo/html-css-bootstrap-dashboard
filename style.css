@@ -14,6 +14,10 @@
 header{
     position: sticky;
     max-height: 65px;
+    background-color: #f8f9fa;
+}
+header .row{
+    background-color: white;
 }
 aside nav{
     height: 100%;
@@ -30,6 +34,9 @@ main{
 .ms-search-bar-input{
     background-color: #e5e5e5;
     border: none;
+}
+.ms-item{
+    color: #5b5858;
 }
 /* #endregion MS Utilities */
 
