@@ -77,8 +77,9 @@ aside{
     background-color: #1b72e8;
 }
 .square-border{
-    height: 35px;
-    width: 35px;
+    padding: 10px;
+    max-height: 35px;
+    max-width: 35px;
     border: 1px solid white;
     display: flex;
     align-items: center;
@@ -87,6 +88,15 @@ aside{
 }
 .students-nmbr{
     font-size: 26px;
+}
+.ms-badge{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #165bba
+}
+.ms-plus{
+    font-size: 8px;
 }
 /* #endregion Students */
 
