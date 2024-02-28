@@ -73,6 +73,10 @@ main{
 .ms-grey-hover:hover{
     background-color: rgba(128, 128, 128, 0.5);
 }
+.ms-white-hover:hover{
+    background-color: white;
+    color: black;
+}
 /* #endregion MS Utilities */
 
 /* #region General */
@@ -116,6 +120,7 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    color: white;
 }
 .students-nmbr{
     font-size: 26px;
