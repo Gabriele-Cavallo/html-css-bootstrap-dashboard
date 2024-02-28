@@ -73,67 +73,69 @@
                   <button class="btn square-border text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
                     <div class="offcanvas offcanvas-end ms-offcanvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                       <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                        <h5 class="offcanvas-title ps-2" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                       </div>
                       <div class="offcanvas-body">
                         <form>
-                          <div class="row">
-                            <div class="mb-3 col-12 col-md-6">
-                              <label for="exampleInputName1" class="form-label">Nome</label>
-                              <input required type="text" class="form-control" id="exampleInputName1">
-                            </div>
-                            <div class="mb-3 col-12 col-md-6">
-                              <label for="exampleInputSurname1" class="form-label">Cognome</label>
-                              <input required type="text" class="form-control" id="exampleInputSurname1">
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="mb-3 col-12 col-md-6">
-                              <label for="exampleInputEmail1" class="form-label">Email</label>
-                              <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                                <input required type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                          <div class="container-fluid">
+                            <div class="row">
+                              <div class="mb-3 col-12 col-md-6">
+                                <label for="exampleInputName1" class="form-label">Nome</label>
+                                <input required type="text" class="form-control" id="exampleInputName1">
+                              </div>
+                              <div class="mb-3 col-12 col-md-6">
+                                <label for="exampleInputSurname1" class="form-label">Cognome</label>
+                                <input required type="text" class="form-control" id="exampleInputSurname1">
                               </div>
                             </div>
-                            <div class="mb-3 col-12 col-md-6">
-                              <label for="exampleInputPassword1" class="form-label">Password</label>
-                              <input required type="password" class="form-control" id="exampleInputPassword1">
+                            <div class="row">
+                              <div class="mb-3 col-12 col-md-6">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1">@</span>
+                                  <input required type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                              </div>
+                              <div class="mb-3 col-12 col-md-6">
+                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                <input required type="password" class="form-control" id="exampleInputPassword1">
+                              </div>
                             </div>
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleInputAddress1" class="form-label">Indirizzo</label>
-                            <input required type="text" class="form-control" id="exampleInputAddress1">
-                          </div>
-                          <div class="row align-items-start">
-                            <div class="mb-3 col-12 col-md-6">
-                              <label for="exampleInputCity1" class="form-label">Città</label>
-                              <input required type="text" class="form-control" id="exampleInputCity1">
+                            <div class="mb-3">
+                              <label for="exampleInputAddress1" class="form-label">Indirizzo</label>
+                              <input required type="text" class="form-control" id="exampleInputAddress1">
                             </div>
-                            <div class=" col-12 col-md-4 mb-3">
-                              <label for="exampleInputState1" class="form-label">Stato</label>
-                              <select id="exampleInputState1" class="form-select form-select-md" aria-label="Small select example">
-                                <option selected>Scegli...</option>
-                                <option value="1">Opzione1</option>
-                                <option value="2">Opzione2</option>
-                                <option value="3">Opzione3</option>
-                              </select>
+                            <div class="row align-items-start">
+                              <div class="mb-3 col-12 col-md-6">
+                                <label for="exampleInputCity1" class="form-label">Città</label>
+                                <input required type="text" class="form-control" id="exampleInputCity1">
+                              </div>
+                              <div class=" col-12 col-md-4 mb-3">
+                                <label for="exampleInputState1" class="form-label">Stato</label>
+                                <select id="exampleInputState1" class="form-select form-select-md" aria-label="Small select example">
+                                  <option selected>Scegli...</option>
+                                  <option value="1">Opzione1</option>
+                                  <option value="2">Opzione2</option>
+                                  <option value="3">Opzione3</option>
+                                </select>
+                              </div>
+                              <div class="mb-3 col-12 col-md-2">
+                                <label for="exampleInputCAP1" class="form-label">CAP</label>
+                                <input required type="number" class="form-control" id="exampleInputCAP1">
+                              </div>
                             </div>
-                            <div class="mb-3 col-12 col-md-2">
-                              <label for="exampleInputCAP1" class="form-label">CAP</label>
-                              <input required type="number" class="form-control" id="exampleInputCAP1">
+                            <div class="mb-3">
+                              <label for="formFile" class="form-label">Foto</label>
+                              <input required class="form-control" type="file" id="formFile">
                             </div>
+                            <div class="mb-3 form-check">
+                              <input required type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Salva</button>
+                            <button type="reset" class="btn btn-warning">Svuota</button>
                           </div>
-                          <div class="mb-3">
-                            <label for="formFile" class="form-label">Foto</label>
-                            <input required class="form-control" type="file" id="formFile">
-                          </div>
-                          <div class="mb-3 form-check">
-                            <input required type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
-                          </div>
-                          <button type="submit" class="btn btn-primary">Salva</button>
-                          <button type="reset" class="btn btn-warning">Svuota</button>
                         </form>
                       </div>
                     </div>
@@ -169,165 +171,169 @@
           <div class="row py-3">
             <div class="col-lg-8">
               <!-- Prossime classi -->
-              <div class="col-12 mb-3">
-                <div class="card px-3 pb-3">
-                  <h5 class="fw-semibold card-title">Prossime classi</h5>
-                  <table class="table">
-                    <thead>
-                      <tr>
-                        <th class="col" scope="col">Nome</th>
-                        <th class="ms-d-sm col-2 col-lg-2 text-center" scope="col">Data Inizio</th>
-                        <th class="ms-d-sm col-1 col-md-2 col-lg-1 text-center" scope="col">ROI</th>
-                        <th class="col-1 text-center col-md-2 col-lg-1" scope="col">Stato</th>
-                        <th class="col-1 text-center" scope="col">Azioni</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="col">
-                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
-                            <span>Classe 75</span>
-                        </td>
-                        <td class="ms-d-sm col-2 col-lg-1 text-center">15 Feb 2021</td>
-                        <td class="ms-d-sm col-1 text-center">20%</td>
-                        <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
-                        <td class="col d-flex justify-content-center">
-                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
-                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="col">
-                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
-                            <span>Classe 76</span>
-                        </td>
-                        <td class="ms-d-sm col-2 col-lg-1 text-center">16 Feb 2021</td>
-                        <td class="ms-d-sm col-1 text-center">20%</td>
-                        <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
-                        <td class="col d-flex justify-content-center">
-                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
-                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="col">
-                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
-                            <span>Classe 77</span>
-                        </td>
-                        <td class="ms-d-sm col-2 col-lg-1 text-center">17 Feb 2021</td>
-                        <td class="ms-d-sm col-1 text-center">20%</td>
-                        <td class="col-1 text-center"><span class="badge text-bg-warning text-white">process</span></td>
-                        <td class="col d-flex justify-content-center">
-                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
-                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="col">
-                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
-                            <span>Classe 78</span>
-                        </td>
-                        <td class="ms-d-sm col-2 col-lg-1 text-center">18 Feb 2021</td>
-                        <td class="ms-d-sm col-1 text-center">20%</td>
-                        <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
-                        <td class="col d-flex justify-content-center">
-                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
-                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="col">
-                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
-                            <span>Classe 79</span>
-                        </td>
-                        <td class="ms-d-sm col-2 col-lg-1 text-center">19 Feb 2021</td>
-                        <td class="ms-d-sm col-1 text-center">20%</td>
-                        <td class="col-1 text-center"><span class="badge text-bg-danger">failed</span></td>
-                        <td class="col d-flex justify-content-center">
-                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
-                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="col">
-                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
-                            <span>Classe 80</span>
-                        </td>
-                        <td class="ms-d-sm col-2 col-lg-1 text-center">20 Feb 2021</td>
-                        <td class="ms-d-sm col-1 text-center">20%</td>
-                        <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
-                        <td class="col d-flex justify-content-center">
-                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
-                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="col">
-                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
-                            <span>Classe 81</span>
-                        </td>
-                        <td class="ms-d-sm col-2 col-lg-1 text-center">21 Feb 2021</td>
-                        <td class="ms-d-sm col-1 text-center">20%</td>
-                        <td class="col-1 text-center"><span class="badge text-bg-danger">failed</span></td>
-                        <td class="col d-flex justify-content-center">
-                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
-                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="col">
-                            <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
-                            <span>Classe 82</span>
-                        </td>
-                        <td class="ms-d-sm col-2 col-lg-1 text-center">22 Feb 2021</td>
-                        <td class="ms-d-sm col-1 text-center">20%</td>
-                        <td class="col-1 text-center"><span class="badge text-bg-success">Done</span></td>
-                        <td class="col d-flex justify-content-center">
-                            <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
-                            <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+              <div class="row">
+                <div class="col-12 mb-3">
+                  <div class="card px-3 pb-3">
+                    <h5 class="fw-semibold card-title">Prossime classi</h5>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th class="ms-50-colspan" scope="col">Nome</th>
+                          <th class="ms-d-sm text-center" colspan="1" scope="col">Data Inizio</th>
+                          <th class="ms-d-sm text-center" colspan="1" scope="col">ROI</th>
+                          <th class="text-center" colspan="1" scope="col">Stato</th>
+                          <th class="text-center" colspan="1" scope="col">Azioni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="ms-50-colspan">
+                              <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                              <span>Classe 75</span>
+                          </td>
+                          <td class="ms-d-sm text-center" colspan="1">15 Feb 2021</td>
+                          <td class="ms-d-sm text-center" colspan="1">20%</td>
+                          <td class="text-center" colspan="1"><span class="badge text-bg-success">Done</span></td>
+                          <td class="d-flex justify-content-center" colspan="1">
+                              <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                              <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ms-50-colspan">
+                              <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                              <span>Classe 76</span>
+                          </td>
+                          <td class="ms-d-sm text-center" colspan="1">16 Feb 2021</td>
+                          <td class="ms-d-sm text-center" colspan="1">20%</td>
+                          <td class="text-center" colspan="1"><span class="badge text-bg-success">Done</span></td>
+                          <td class="d-flex justify-content-center" colspan="1">
+                              <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                              <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ms-50-colspan">
+                              <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                              <span>Classe 77</span>
+                          </td>
+                          <td class="ms-d-sm text-center" colspan="1">17 Feb 2021</td>
+                          <td class="ms-d-sm text-center" colspan="1">20%</td>
+                          <td class="text-center" colspan="1"><span class="badge text-bg-warning text-white">process</span></td>
+                          <td class="d-flex justify-content-center" colspan="1">
+                              <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                              <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ms-50-colspan">
+                              <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                              <span>Classe 78</span>
+                          </td>
+                          <td class="ms-d-sm text-center" colspan="1">18 Feb 2021</td>
+                          <td class="ms-d-sm text-center" colspan="1">20%</td>
+                          <td class="text-center" colspan="1"><span class="badge text-bg-success">Done</span></td>
+                          <td class="d-flex justify-content-center" colspan="1">
+                              <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                              <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ms-50-colspan">
+                              <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                              <span>Classe 79</span>
+                          </td>
+                          <td class="ms-d-sm text-center" colspan="1">19 Feb 2021</td>
+                          <td class="ms-d-sm text-center" colspan="1">20%</td>
+                          <td class="text-center" colspan="1"><span class="badge text-bg-danger">failed</span></td>
+                          <td class="d-flex justify-content-center" colspan="1">
+                              <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                              <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ms-50-colspan">
+                              <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                              <span>Classe 80</span>
+                          </td>
+                          <td class="ms-d-sm text-center" colspan="1">20 Feb 2021</td>
+                          <td class="ms-d-sm text-center" colspan="1">20%</td>
+                          <td class="text-center" colspan="1"><span class="badge text-bg-success">Done</span></td>
+                          <td class="d-flex justify-content-center" colspan="1">
+                              <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                              <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ms-50-colspan">
+                              <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                              <span>Classe 81</span>
+                          </td>
+                          <td class="ms-d-sm text-center" colspan="1">21 Feb 2021</td>
+                          <td class="ms-d-sm text-center" colspan="1">20%</td>
+                          <td class="text-center" colspan="1"><span class="badge text-bg-danger">failed</span></td>
+                          <td class="d-flex justify-content-center" colspan="1">
+                              <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                              <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="ms-50-colspan">
+                              <img class="avatar-class" src="./img/class-avatar-Photoroom.png-Photoroom.png" alt="Class Avatar">
+                              <span>Classe 82</span>
+                          </td>
+                          <td class="ms-d-sm text-center" colspan="1">22 Feb 2021</td>
+                          <td class="ms-d-sm text-center" colspan="1">20%</td>
+                          <td class="text-center" colspan="1"><span class="badge text-bg-success">Done</span></td>
+                          <td class="d-flex justify-content-center" colspan="1">
+                              <i class="me-2 ms-item-table fa-solid fa-pencil"></i>
+                              <i class="ms-2 ms-item-table fa-solid fa-trash"></i>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
               <!-- /Prossime classi -->
               <!-- F.A.Q. -->
-              <div class="col-12">
-                <div class="card px-3 pb-3">
-                  <h5 class="fw-semibold card-title">F.A.Q.</h5>
-                  <div class="accordion accordion-flush" id="accordionFlushExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header d-flex">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Come aggiungere un nuovo studente?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Clicca sul + in alto nella sezione blu</div>
+              <div class="row pb-3">
+                <div class="col-12">
+                  <div class="card px-3 pb-3">
+                    <h5 class="fw-semibold card-title">F.A.Q.</h5>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header d-flex">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Come aggiungere un nuovo studente?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Clicca sul + in alto nella sezione blu</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header d-flex">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Come posso accedere alle informazioni del mio account?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Clicca sull'icona della campanella.</div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header d-flex">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Come posso accedere alle informazioni del mio account?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Clicca sull'icona della campanella.</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header d-flex">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                          Posso usare questa dashboard da mobile?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">Ovviamente si!!!</div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header d-flex">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Posso usare questa dashboard da mobile?
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Ovviamente si!!!</div>
+                        </div>
                       </div>
-                    </div>
-                    </div>
+                      </div>
+                  </div>
                 </div>
               </div>
               <!-- F.A.Q. -->
