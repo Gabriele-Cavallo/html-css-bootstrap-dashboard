@@ -70,8 +70,8 @@ main{
 .ms-offcanvas{
     width: 50vw !important;
 }
-.ms-50-colspan{
-    width: 50%;
+.ms-grey-hover:hover{
+    background-color: rgba(128, 128, 128, 0.5);
 }
 /* #endregion MS Utilities */
 
@@ -85,6 +85,9 @@ aside{
 }
 .dropdown i{
     cursor: pointer
+}
+a{
+    text-decoration: none;
 }
 /* #endregion General */
 
