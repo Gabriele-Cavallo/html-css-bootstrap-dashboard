@@ -81,6 +81,9 @@ main{
     width: 98%;
     margin: 0 auto;
 }
+.ms-w-50{
+    width: 50%;
+}
 /* #endregion MS Utilities */
 
 /* #region General */
@@ -163,13 +166,21 @@ main{
     .ms-d-sm{
         display: none;
     }
-    .ms-offcanvas{
-        width: 100vw !important;
+    .ms-w-25{
+        width: 25%;
     }
 }
 @media screen and (max-width: 992px){
     .ms-offcanvas{
         width: 100vw !important;
+    }
+    .ms-w-50{
+        width: 30%;
+    }
+}
+@media screen and (min-width: 993px) and  (max-width: 1200px){
+    .ms-w-50{
+        width: 40%;
     }
 }
 /* #endregion MS Media Query */
