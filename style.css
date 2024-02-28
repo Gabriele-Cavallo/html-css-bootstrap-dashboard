@@ -86,6 +86,9 @@ aside{
 /* #endregion General */
 
 /* #region Header */
+header{
+    z-index: 99;
+}
 .ms-mobile-logo{
     height: 40px;
 }
