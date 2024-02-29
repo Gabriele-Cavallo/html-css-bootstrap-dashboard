@@ -400,6 +400,7 @@
               <div class="card px-3 py-3">
                 <ul class="list-group">
                   <li class="list-group-item">
+                    <!-- <canvas id="myChart"></canvas> -->
                     <img src="./img/stats.jpeg" alt="Stats">
                     <h3>Utenti Attivi</h3>
                     <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
@@ -421,5 +422,31 @@
   <!-- JS Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <!-- /JS Bootstrap -->
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script>
+    const ctx = document.getElementById('myChart');
+  
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Bootstrap', 'Spotify web', 'Dropbox', 'Discord', 'Boolando', 'Booleaner'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+  <!-- /Chart.js -->
 </body>
 </html>
