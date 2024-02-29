@@ -81,8 +81,8 @@ main{
     width: 98%;
     margin: 0 auto;
 }
-.ms-w-50{
-    width: 50%;
+.ms-w-60{
+    width: 60%;
 }
 /* #endregion MS Utilities */
 
@@ -174,12 +174,12 @@ main{
     .ms-offcanvas{
         width: 100vw !important;
     }
-    .ms-w-50{
+    .ms-w-60{
         width: 30%;
     }
 }
 @media screen and (min-width: 993px) and  (max-width: 1200px){
-    .ms-w-50{
+    .ms-w-60{
         width: 40%;
     }
 }
